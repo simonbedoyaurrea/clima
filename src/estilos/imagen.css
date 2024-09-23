@@ -1,0 +1,10 @@
+
+.contenedor-imagen{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+    background-position-y: center;
+    background-attachment: fixed;
+}
