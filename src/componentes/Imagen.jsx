@@ -8,7 +8,7 @@ export default function Imagen() {
     const{ciudad} = useContext(CityContext)
 
     useEffect(()=>{
-        fetch(`https://api.unsplash.com/search/photos?query=${ciudad}&client_id=3k3ygIB2g2RGefQ8uf0C5GUNnmv6156f1CgmGHoHUFw`)
+        fetch(`https://api.unsplash.com/search/photos?query=${ciudad} city&client_id=3k3ygIB2g2RGefQ8uf0C5GUNnmv6156f1CgmGHoHUFw`)
         .then(response=>response.json())
         .then(data=>{
         let nroImg = Math.floor(Math.random() * data.results.length);

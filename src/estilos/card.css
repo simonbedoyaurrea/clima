@@ -13,17 +13,20 @@
     backdrop-filter: blur(2px);
     
     
+    
 }
 @font-face {
     font-family: 'greek'; 
     src: url('../fuentes/Greek-Freak.ttf') format('truetype'); 
 }
 .icono{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     mix-blend-mode: difference;
     color: rgb(255, 255, 255);
-    filter: drop-shadow(2px 4px 6px rgb(12, 12, 12))
+    filter: drop-shadow(2px 4px 6px rgb(12, 12, 12));
+    background-color:rgba(68, 42, 183, 0.297);
+    border-radius: 10px;
 }
 
 .nombre-ciudad{
@@ -32,11 +35,15 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.808);
     mix-blend-mode: difference;
     font-family: greek;
+    background-color:rgba(68, 42, 183, 0.297);
+    border-radius: 10px;
+    padding: 3px;
+
 }
 
 .icono-temperatura-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 70%;
     p{
@@ -45,8 +52,11 @@
         text-shadow: 2px 0px 4px rgb(0, 0, 0);
         mix-blend-mode: difference;
         font-family: greek;
-        width: 200px;
+        width: 170px;
         text-align: center;
+        background-color:rgba(68, 42, 183, 0.297);
+        border-radius: 10px;
+        
     }
     .temperatura-medida{
         font-size: 50px;
@@ -57,20 +67,6 @@
         text-align: center;
         padding: 3px;
         border-radius: 10px;
-        animation: color 20s infinite ;
-
-    }
-}
-
-@keyframes color{
-    0%{
-        background-color:rgba(68, 42, 183, 0.297)
-
-    }
-    60%{
-        background-color:rgba(106, 90, 177, 0.111)
-    }
-    100%{
-        background-color:rgba(68, 42, 183, 0.297)
+        background-color: transparent;
     }
 }

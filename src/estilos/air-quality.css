@@ -1,0 +1,113 @@
+.air-info-container{
+    width: 900px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(205, 206, 250);
+    background:radial-gradient(rgb(31, 23, 74),black);
+    
+
+}
+h2{
+    font-size:40px;
+}
+
+.title-icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    
+
+    .icon-air{
+        font-size: 300px;
+    }
+}
+
+.air-info{
+    width: 450px;
+    height: 300px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    div{
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: rgba(255, 255, 255, 0.048);
+        border-radius: 10px;
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        p{
+            width: 150px; 
+            text-align: left;
+
+        }
+        span{
+            width: 150px;
+            text-align: center;
+        }
+    }
+
+}
+
+.back-button {
+    width: 150px;
+    height: 350px;
+    background: linear-gradient(to left, transparent, transparent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.3s ease; /* Transición del fondo */
+    cursor: pointer;
+    
+    button {
+        background-color: transparent;
+        border: transparent;
+        font-size: 50px;
+        color: rgba(0, 0, 0, 0.219); 
+        transition: color 0.4s linear, left 0.4s ease; /* Transición para color y posición */
+        position: relative;
+        left: 20px;
+        width: 100%;
+      height: 100%;
+
+        &:hover .link-atras{
+            color: black;
+        }
+
+    }
+
+    &:hover {
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.614), transparent);
+    }
+
+    &:hover button {
+        color: black;
+        left: -20px;
+        scale: 1.4;
+    }
+}
+
+
+.air-quality{
+    display: flex;
+    justify-content: flex-start;
+    gap: 60px;
+    align-items: center;
+    margin-top: 30px;
+
+
+    
+
+}
+
+.link-atras{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.438);
+}

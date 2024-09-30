@@ -1,0 +1,29 @@
+.title{
+    color: rgb(81, 85, 216);
+    font-size: 30px;
+}
+
+.title-container{
+    margin: auto;
+    margin-top: 30px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    animation: aparecer .8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+.title-logo{
+    font-size: 45px;
+    color: rgb(81, 85, 216);
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
